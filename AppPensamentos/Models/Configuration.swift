@@ -57,7 +57,13 @@ class Configuration {
     
     //construindo um inicializador privado
     private init() {
-        
+        //deixando o valor do autofrefesh como false pois o valor é boleano, ir até o swtich e desabilitar -  off, para que ao recuperar o valor nao entrar em conflito, pois como nunca foi recurapdo o valor o mesmo incializa com false, assim devemos desabilitar
+        //se o valor for igual a zero não existe nada lá
+        if defaults.double(forKey: UserDefaultsKeys.timeInterval.rawValue) == 0 {
+            //vamos armazenar o valor padrão que foi definido como 8.0
+            defaults.set(8.0, forKey: UserDefaultsKeys.timeInterval.rawValue)
+            
+        }
     }
     
     
