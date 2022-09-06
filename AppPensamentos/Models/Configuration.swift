@@ -24,8 +24,36 @@ class Configuration {
         get {
             //recuprando uma informação
             return defaults.double(forKey: UserDefaultsKeys.timeInterval.rawValue)
-        }
-    }
+        } //end get
+        set {
+            //setando a informaçnao recuprada
+            defaults.set(newValue, forKey: UserDefaultsKeys.timeInterval.rawValue)
+        } //end set
+    } //end var timeInterval: Double
+    
+    var colorScheme: Int {
+        get {
+            //recuprando uma informação
+            return defaults.integer(forKey: UserDefaultsKeys.colorScheme.rawValue)
+        } //end get
+        set {
+            //setando a informaçnao recuprada
+            defaults.set(newValue, forKey: UserDefaultsKeys.colorScheme.rawValue)
+        } //end set
+    } //end var colorScheme : Int
+    
+    
+    var autorefresh: Bool {
+        get {
+            //recuprando uma informação
+            return defaults.bool(forKey: UserDefaultsKeys.autorefresh.rawValue)
+        } //end get
+        set {
+            //setando a informaçnao recuprada
+            defaults.set(newValue, forKey: UserDefaultsKeys.autorefresh.rawValue)
+        } //end set
+    } //end var autorefresh: Bool
+    
     
     //construindo um inicializador privado
     private init() {
