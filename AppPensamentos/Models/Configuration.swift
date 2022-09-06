@@ -62,9 +62,8 @@ class Configuration {
         if defaults.double(forKey: UserDefaultsKeys.timeInterval.rawValue) == 0 {
             //vamos armazenar o valor padrão que foi definido como 8.0
             defaults.set(8.0, forKey: UserDefaultsKeys.timeInterval.rawValue)
-            
-        }
-    }
+        } //end if defaults.double
+    } //end private init
     
     
 } //end class Configuration

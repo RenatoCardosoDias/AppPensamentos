@@ -16,6 +16,8 @@ class QuotesViewController: UIViewController {
     @IBOutlet weak var lbAuthor: UILabel!
     @IBOutlet weak var lcTop: NSLayoutConstraint!
     
+    
+    
     let quotesManager = QuotesManager()
     var timer: Timer?
     
