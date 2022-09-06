@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		882C52BB28C7737E00F72D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52BA28C7737E00F72D7F /* AppDelegate.swift */; };
 		882C52BD28C7737E00F72D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52BC28C7737E00F72D7F /* SceneDelegate.swift */; };
-		882C52BF28C7737E00F72D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52BE28C7737E00F72D7F /* ViewController.swift */; };
 		882C52C228C7737E00F72D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882C52C028C7737E00F72D7F /* Main.storyboard */; };
 		882C52C428C7737F00F72D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882C52C328C7737F00F72D7F /* Assets.xcassets */; };
 		882C52C728C7737F00F72D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882C52C528C7737F00F72D7F /* LaunchScreen.storyboard */; };
+		882C52D128C7747B00F72D7F /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 882C52CF28C7747B00F72D7F /* quotes.json */; };
+		882C52D228C7747B00F72D7F /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 882C52D028C7747B00F72D7F /* Savoye LET.ttc */; };
+		882C52D428C7B68900F72D7F /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52D328C7B68900F72D7F /* QuotesViewController.swift */; };
+		882C52D628C7B6C800F72D7F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52D528C7B6C800F72D7F /* SettingsViewController.swift */; };
+		882C52DA28C7BFD100F72D7F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52D928C7BFD100F72D7F /* Quote.swift */; };
+		882C52DD28C7C03800F72D7F /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52DC28C7C03800F72D7F /* QuotesManager.swift */; };
+		882C52DF28C7C06400F72D7F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52DE28C7C06400F72D7F /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		882C52B728C7737E00F72D7F /* AppPensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882C52BA28C7737E00F72D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882C52BC28C7737E00F72D7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		882C52BE28C7737E00F72D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		882C52C128C7737E00F72D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882C52C328C7737F00F72D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882C52C628C7737F00F72D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		882C52C828C7737F00F72D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882C52CF28C7747B00F72D7F /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = quotes.json; path = "../../../../../../Downloads/Arquivos Pensamentos/quotes.json"; sourceTree = "<group>"; };
+		882C52D028C7747B00F72D7F /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Savoye LET.ttc"; path = "../../../../../../Downloads/Arquivos Pensamentos/Savoye LET.ttc"; sourceTree = "<group>"; };
+		882C52D328C7B68900F72D7F /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		882C52D528C7B6C800F72D7F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		882C52D928C7BFD100F72D7F /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		882C52DC28C7C03800F72D7F /* QuotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = "<group>"; };
+		882C52DE28C7C06400F72D7F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,51 @@
 			children = (
 				882C52BA28C7737E00F72D7F /* AppDelegate.swift */,
 				882C52BC28C7737E00F72D7F /* SceneDelegate.swift */,
-				882C52BE28C7737E00F72D7F /* ViewController.swift */,
-				882C52C028C7737E00F72D7F /* Main.storyboard */,
+				882C52CE28C7746000F72D7F /* Files */,
+				882C52DB28C7BFF300F72D7F /* Models */,
+				882C52D828C7B71600F72D7F /* Views */,
+				882C52D728C7B6F300F72D7F /* Controllers */,
 				882C52C328C7737F00F72D7F /* Assets.xcassets */,
-				882C52C528C7737F00F72D7F /* LaunchScreen.storyboard */,
 				882C52C828C7737F00F72D7F /* Info.plist */,
 			);
 			path = AppPensamentos;
+			sourceTree = "<group>";
+		};
+		882C52CE28C7746000F72D7F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				882C52CF28C7747B00F72D7F /* quotes.json */,
+				882C52D028C7747B00F72D7F /* Savoye LET.ttc */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		882C52D728C7B6F300F72D7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				882C52D328C7B68900F72D7F /* QuotesViewController.swift */,
+				882C52D528C7B6C800F72D7F /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		882C52D828C7B71600F72D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				882C52C028C7737E00F72D7F /* Main.storyboard */,
+				882C52C528C7737F00F72D7F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		882C52DB28C7BFF300F72D7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				882C52D928C7BFD100F72D7F /* Quote.swift */,
+				882C52DC28C7C03800F72D7F /* QuotesManager.swift */,
+				882C52DE28C7C06400F72D7F /* Configuration.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882C52D128C7747B00F72D7F /* quotes.json in Resources */,
 				882C52C728C7737F00F72D7F /* LaunchScreen.storyboard in Resources */,
 				882C52C428C7737F00F72D7F /* Assets.xcassets in Resources */,
+				882C52D228C7747B00F72D7F /* Savoye LET.ttc in Resources */,
 				882C52C228C7737E00F72D7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882C52BF28C7737E00F72D7F /* ViewController.swift in Sources */,
+				882C52D428C7B68900F72D7F /* QuotesViewController.swift in Sources */,
 				882C52BB28C7737E00F72D7F /* AppDelegate.swift in Sources */,
+				882C52DF28C7C06400F72D7F /* Configuration.swift in Sources */,
 				882C52BD28C7737E00F72D7F /* SceneDelegate.swift in Sources */,
+				882C52DA28C7BFD100F72D7F /* Quote.swift in Sources */,
+				882C52DD28C7C03800F72D7F /* QuotesManager.swift in Sources */,
+				882C52D628C7B6C800F72D7F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +349,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +361,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
