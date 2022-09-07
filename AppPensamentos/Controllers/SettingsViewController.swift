@@ -35,7 +35,7 @@ class SettingsViewController: UIViewController {
         //definindo o switch como on/off
         sAutorefresh.setOn(config.autorefresh, animated: false)
         //setando o valor do time
-        
+        slTimeInterval.setValue(config.timeInterval, animated: false)
     }
     
     @IBAction func changeAutoRefresh(_ sender: UISwitch) {
