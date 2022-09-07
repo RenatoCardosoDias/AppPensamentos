@@ -19,6 +19,7 @@
 		882C52DA28C7BFD100F72D7F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52D928C7BFD100F72D7F /* Quote.swift */; };
 		882C52DD28C7C03800F72D7F /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52DC28C7C03800F72D7F /* QuotesManager.swift */; };
 		882C52DF28C7C06400F72D7F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52DE28C7C06400F72D7F /* Configuration.swift */; };
+		882C52E328C896D000F72D7F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 882C52E228C896CF00F72D7F /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		882C52D928C7BFD100F72D7F /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		882C52DC28C7C03800F72D7F /* QuotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = "<group>"; };
 		882C52DE28C7C06400F72D7F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		882C52E228C896CF00F72D7F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = AppPensamentos/Settings.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				882C52D328C7B68900F72D7F /* QuotesViewController.swift */,
 				882C52D528C7B6C800F72D7F /* SettingsViewController.swift */,
+				882C52E228C896CF00F72D7F /* Settings.bundle */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				882C52C728C7737F00F72D7F /* LaunchScreen.storyboard in Resources */,
 				882C52C428C7737F00F72D7F /* Assets.xcassets in Resources */,
 				882C52D228C7747B00F72D7F /* Savoye LET.ttc in Resources */,
+				882C52E328C896D000F72D7F /* Settings.bundle in Resources */,
 				882C52C228C7737E00F72D7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
