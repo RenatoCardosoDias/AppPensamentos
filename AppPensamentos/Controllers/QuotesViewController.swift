@@ -64,7 +64,7 @@ class QuotesViewController: UIViewController {
         //so vai exectuar essa ação se estiver marcado como true o autorefresh
         if config.autorefresh{
             //qual é o tempo que ele vai demorar para executar uma ação
-            timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { (Timer) in
+            timer = Timer.scheduledTimer(withTimeInterval: config.timeInterval, repeats: true) { (Timer) in
                 self.showRandomQuote() //esse metodo só é chamado depois de 8 segundos
             }
         } //end if config.autorefresh

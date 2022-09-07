@@ -53,8 +53,8 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func changeTimeInterval(_ sender: UISlider) {
-        //recuperar o valor que foi utilizado
-        let value = Double(sender.value)
+        //recuperar o valor que foi utilizado, arredondar o valor usando a funcao round
+        let value = Double(round(sender.value))
         //recuperar o valor que foi passado para o lbTimeInterval
         changeTimeIntervalLabel(width: value)
         //setar o valor no arquivo de configuração com o valor passado na Label do TimeIntervalLabel
