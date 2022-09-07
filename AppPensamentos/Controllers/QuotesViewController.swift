@@ -31,8 +31,7 @@ class QuotesViewController: UIViewController {
     //função que diz o oque VAI APARECER NA TELA
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //prepara uma quote
-        prepareQuote()
+       
         //toda vez que entrar na tela, formatar a view
         formatView()
         
@@ -43,6 +42,14 @@ class QuotesViewController: UIViewController {
         //modificar a cor de fundo, schema de cores
         //mudando backgroundColor
         view.backgroundColor = config.colorScheme == 0 ? .white : UIColor(red: 156.0/255, green: 68.0/255, blue: 15.0/255, alpha: 1.0) //se for igual a zero, então ele está na versão clara. Caso seja 0 recebe versão clara, senão recebe as configurações de UIColor
+        //alterando as cores das labels
+        lbQuotes.textColor = config.colorScheme == 0 ? .black : .white
+        lbAuthor.textColor = config.colorScheme == 0 ? UIColor(red: 192.0/255, green: 96.0/255, blue: 49.0/255, alpha: 1.0) : .yellow
+        
+        //chama o método e prepara uma quote
+        prepareQuote()
+        
+        
         
     } //end func formatView
     
@@ -54,10 +61,13 @@ class QuotesViewController: UIViewController {
     func prepareQuote() {
         //para que não ocorra de aparecer duas quotes temos que invalidar o tempo anterior
         timer?.invalidate()
-        //qual é o tempo que ele vai demorar para executar uma ação
-        timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { (Timer) in
-            self.showRandomQuote() //esse metodo só é chamado depois de 8 segundos
-        }
+        //so vai exectuar essa ação se estiver marcado como true o autorefresh
+        if config.autorefresh{
+            //qual é o tempo que ele vai demorar para executar uma ação
+            timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { (Timer) in
+                self.showRandomQuote() //esse metodo só é chamado depois de 8 segundos
+            }
+        } //end if config.autorefresh
         showRandomQuote() //por isso estamos chamando ele aqui também
     }
     func showRandomQuote(){
