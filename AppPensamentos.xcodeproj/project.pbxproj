@@ -76,6 +76,7 @@
 				882C52DB28C7BFF300F72D7F /* Models */,
 				882C52D828C7B71600F72D7F /* Views */,
 				882C52D728C7B6F300F72D7F /* Controllers */,
+				882C52E228C896CF00F72D7F /* Settings.bundle */,
 				882C52C328C7737F00F72D7F /* Assets.xcassets */,
 				882C52C828C7737F00F72D7F /* Info.plist */,
 			);
@@ -96,7 +97,6 @@
 			children = (
 				882C52D328C7B68900F72D7F /* QuotesViewController.swift */,
 				882C52D528C7B6C800F72D7F /* SettingsViewController.swift */,
-				882C52E228C896CF00F72D7F /* Settings.bundle */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
