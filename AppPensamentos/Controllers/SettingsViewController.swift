@@ -38,6 +38,13 @@ class SettingsViewController: UIViewController {
         slTimeInterval.setValue(Float(config.timeInterval), animated: false)
         //Definindo qual seguimento está selecionado
         scColorScheme.selectedSegmentIndex = config.colorScheme
+        //mudando o label do intervalo do time
+        changeTimeIntervalLabel(width: config.timeInterval)
+    }
+    
+    //Mudar o valor após x segundos
+    func changeTimeIntervalLabel(width value: Double){
+        lbTimeInterval.text = "Mudar após \(value) segundos"
     }
     
     @IBAction func changeAutoRefresh(_ sender: UISwitch) {
