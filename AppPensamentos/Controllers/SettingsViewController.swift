@@ -35,7 +35,9 @@ class SettingsViewController: UIViewController {
         //definindo o switch como on/off
         sAutorefresh.setOn(config.autorefresh, animated: false)
         //setando o valor do time
-        slTimeInterval.setValue(config.timeInterval, animated: false)
+        slTimeInterval.setValue(Float(config.timeInterval), animated: false)
+        //Definindo qual seguimento está selecionado
+        scColorScheme.selectedSegmentIndex = config.colorScheme
     }
     
     @IBAction func changeAutoRefresh(_ sender: UISwitch) {
