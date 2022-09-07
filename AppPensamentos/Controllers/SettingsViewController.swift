@@ -44,7 +44,7 @@ class SettingsViewController: UIViewController {
     
     //Mudar o valor após x segundos
     func changeTimeIntervalLabel(width value: Double){
-        lbTimeInterval.text = "Mudar após \(value) segundos"
+        lbTimeInterval.text = "Mudar após \(Int(value)) segundos"
     }
     
     @IBAction func changeAutoRefresh(_ sender: UISwitch) {
