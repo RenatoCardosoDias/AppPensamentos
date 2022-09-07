@@ -15,6 +15,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var scColorScheme: UISegmentedControl!
     @IBOutlet weak var lbTimeInterval: UILabel!
     
+    let config = Configuration.shared
+    
     
 
     override func viewDidLoad() {
@@ -22,6 +24,19 @@ class SettingsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     } //end override func viewDidLaod
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        formatView()
+    }
+    
+    func formatView(){
+        //formatando os dados e chamando quando a tela for aparecer
+        //definindo o switch como on/off
+        sAutorefresh.setOn(config.autorefresh, animated: false)
+        //setando o valor do time
+        
+    }
     
     @IBAction func changeAutoRefresh(_ sender: UISwitch) {
     }
