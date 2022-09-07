@@ -48,6 +48,8 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func changeAutoRefresh(_ sender: UISwitch) {
+        //dizer ao araquivo de configuração mudar o valor do autorefresh, dizendo se está On/Off
+        config.autorefresh = sender.isOn
     }
     
     @IBAction func changeTimeInterval(_ sender: UISlider) {
