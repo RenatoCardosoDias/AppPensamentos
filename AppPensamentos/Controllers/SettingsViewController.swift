@@ -21,6 +21,9 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Refresh"), object: nil, queue: nil) { <#Notification#> in
+            self.formatView()
+        }
 
         // Do any additional setup after loading the view.
     } //end override func viewDidLaod
