@@ -33,7 +33,16 @@ class QuotesViewController: UIViewController {
         super.viewWillAppear(animated)
         //prepara uma quote
         prepareQuote()
+        //toda vez que entrar na tela, formatar a view
+        formatView()
+        
     } //end override func viewWillAppear
+    
+    func formatView(){
+        //criando um metodo para formatar as views
+        //modificar a cor de fundo, schema de cores
+        
+    } //end func formatView
     
     //função que ao tocar na tela passa de pensamento
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
