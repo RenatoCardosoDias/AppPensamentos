@@ -62,6 +62,8 @@ class SettingsViewController: UIViewController {
         
     }
     @IBAction func changeColorScheme(_ sender: UISegmentedControl) {
+        //setando o valor config.colorShchem no arquivo de configuração
+        config.colorScheme = sender.selectedSegmentIndex
     }
     
     
