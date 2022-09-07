@@ -41,6 +41,8 @@ class QuotesViewController: UIViewController {
     func formatView(){
         //criando um metodo para formatar as views
         //modificar a cor de fundo, schema de cores
+        //mudando backgroundColor
+        view.backgroundColor = config.colorScheme == 0 //se for igual a zero, então ele está na versão escura
         
     } //end func formatView
     
